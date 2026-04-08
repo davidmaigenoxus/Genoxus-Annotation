@@ -1,0 +1,73 @@
+[
+  {
+    "Name": "variant_identifications",
+    "Type": "struct<ID:string,Name:string,VCV_accession:string>"
+  },
+  {
+    "Name": "variant_type",
+    "Type": "string"
+  },
+  {
+    "Name": "record_timeline",
+    "Type": "struct<Date_Created:timestamp,Date_Last_Updated:timestamp,Date_Most_Recent_Submission:timestamp,Current_Status:string>"
+  },
+  {
+    "Name": "genomic_location",
+    "Type": "struct<Chromosome:string,Cytogenetic_Location:string,Start:bigint,Stop:bigint,Strand:string,Target_Length:bigint>"
+  },
+  {
+    "Name": "reference_allele",
+    "Type": "string"
+  },
+  {
+    "Name": "alternate_allele",
+    "Type": "string"
+  },
+  {
+    "Name": "host_genes",
+    "Type": "array<struct<Symbol:string,Full_Name:string,ID:string,OMIM:string,Location:struct<Chromosome:string,Cytogenetic_Location:string,Start:bigint,Stop:bigint,Strand:string,Target_Length:bigint>,Haploinsufficiency_Assertion:struct<Description:string,ClinGen_URL:string,Date_Last_Evaluated:timestamp>,Triplosensitivity_Assertion:struct<Description:string,ClinGen_URL:string,Date_Last_Evaluated:timestamp>>>"
+  },
+  {
+    "Name": "protein_changes",
+    "Type": "array<string>"
+  },
+  {
+    "Name": "hgvss",
+    "Type": "array<struct<Assembly:string,Type:string,Nucleotide_Expression:string,Protein_Expression:string,Molecular_Consequence:string>>"
+  },
+  {
+    "Name": "xrefs",
+    "Type": "array<struct<Database:string,Accession:string,Type:string>>"
+  },
+  {
+    "Name": "rcvs",
+    "Type": "array<struct<Accession:string,Title:string,Description:string,Classified_Conditions:array<struct<Condition:string,Database:string,Accession:string>>,Classifications:array<struct<Name:string,Review_Status:string,Descriptions:array<struct<Description:string,Clinical_Impact_Assertion_Type:string,Clinical_Impact_Clinical_Significance:string,Submission_Count:tinyint,Date_Last_Evaluated:timestamp>>>>>>"
+  },
+  {
+    "Name": "classifications",
+    "Type": "array<struct<Name:string,Date_Last_Evaluated:timestamp,Date_Created:timestamp,Date_Most_Recent_Submission:timestamp,Number_Of_Submissions:tinyint,Review_Status:string,Description:string,Conditions:array<struct<Type:string,Contributes_To_Aggregate_Classification:boolean,Traits:array<struct<Name:string,Label:string,XRefs:array<struct<Database:string,Accession:string,Type:string>>>>,Symbolic_Trait:struct<Name:string,Label:string,XRefs:array<struct<Database:string,Accession:string,Type:string>>>,Attributes:array<struct<Value:string,Type:string,XRefs:array<struct<Database:string,Accession:string,Type:string>>>>,Citations:array<struct<Source:string,ID:string,Type:string,Abbrev:string,URL:string,Text:string>>>>>>"
+  },
+  {
+    "Name": "clinical_assertions",
+    "Type": "array<struct<Asserted_Classification:struct<Name:string,Description:string,Review_Status:string,Date_Last_Evaluated:timestamp,Clinical_Impact_Assertion_Type:string,Clinical_Impact_Clinical_Significance:string,Comment:string,Citations:array<struct<Source:string,ID:string,Type:string,Abbrev:string,URL:string,Text:string>>>,Assertion:string,Attributes:array<struct<Value:string,Type:string,XRefs:array<struct<Database:string,Accession:string,Type:string>>>>,ID:string,Date_Submission:timestamp,Date_Last_Updated:timestamp,Date_Created:timestamp,Contributes_To_Aggregate_Classification:boolean,ClinVar_Accession:string,ClinVar_Submitter:string,Record_Status:string,Observed_Ins:array<struct<Sample:string,Is_Affected:boolean,Method:string,Observed_Data:string>>,Conditions:array<struct<Type:string,Contributes_To_Aggregate_Classification:boolean,Traits:array<struct<Name:string,Label:string,XRefs:array<struct<Database:string,Accession:string,Type:string>>>>,Symbolic_Trait:struct<Name:string,Label:string,XRefs:array<struct<Database:string,Accession:string,Type:string>>>,Attributes:array<struct<Value:string,Type:string,XRefs:array<struct<Database:string,Accession:string,Type:string>>>>,Citations:array<struct<Source:string,ID:string,Type:string,Abbrev:string,URL:string,Text:string>>>>>>"
+  },
+  {
+    "Name": "trait_mappings",
+    "Type": "array<struct<TraitType:string,MedGen_CUI:string,MedGen_Name:string>>"
+  },
+  {
+    "Name": "grch",
+    "Type": "string",
+    "PartitionKey": "Partition (0)"
+  },
+  {
+    "Name": "chr",
+    "Type": "string",
+    "PartitionKey": "Partition (1)"
+  },
+  {
+    "Name": "bp",
+    "Type": "string",
+    "PartitionKey": "Partition (2)"
+  }
+]
