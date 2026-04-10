@@ -261,6 +261,8 @@ The following example illustrates a variant's schema:
 }
 ```
 
+## DDL
+File TableDDL.json is produced with AWS Glue scanning our data, and provided in this project for your reference. Schema may change in future releases. 
 
 ## Roadmap
 
