@@ -1,7 +1,7 @@
 [
   {
     "Name": "variant_identifications",
-    "Type": "struct<ID:string,Name:string,VCV_accession:string>"
+    "Type": "struct<ID:string,Name:string,VCV_Accession:string>"
   },
   {
     "Name": "variant_type",
