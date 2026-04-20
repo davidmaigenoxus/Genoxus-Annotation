@@ -39,225 +39,658 @@ The following example illustrates a variant's schema:
 
 ```
 {
-   "Variant_Identifications":{
-      "ID":"144791",
-      "Name":"GRCh38/hg38 1p36.33(chr1:904070-978251)x1",
-      "VCV_accession":null
-   },
-   "Variant_Type":"copy number loss",
-   "Record_Timeline":{
-      "Date_Created":1436745600000,
-      "Date_Last_Updated":1697328000000,
-      "Date_Most_Recent_Submission":1436745600000,
-      "Current_Status":"current"
-   },
-   "Genomic_Location":{
-      "Chromosome":"1",
-      "Cytogenetic_Location":"1p36.33",
-      "Start":839450,
-      "Stop":913631,
-      "Strand":null,
-      "Target_Length":74182
-   },
-   "Reference_Allele":null,
-   "Alternate_Allele":null,
-   "Host_Genes":[
+  "Variant_Identifications": {
+    "VariationID": "12578",
+    "VariationName": "NM_004985.5(KRAS):c.34G>T (p.Gly12Cys)",
+    "VCV_Accession": "VCV000012578"
+  },
+  "Variant_Type": {
+    "VariationType": "single nucleotide variant"
+  },
+  "Timeline": {
+    "DateCreated": "2016-07-26",
+    "DateLastUpdated": "2020-06-25",
+    "MostRecentSubmission": "",
+    "RecordStatus": "current"
+  },
+  "Variant_Location": [
+    {
+      "Chromosome": "12",
+      "CytogeneticLocation": "",
+      "Start": 25398285,
+      "Stop": 25398285,
+      "TargetLength": 1,
+      "Strand": ""
+    }
+  ],
+  "Variant_referenceAllele": "",
+  "Variant_alternateAllele": "",
+  "GeneList": [
+    {
+      "Symbol": "KRAS",
+      "FullName": "KRAS proto-oncogene, GTPase",
+      "ID": "3845",
+      "OMIM": "190070",
+      "Location": [
+        {
+          "GRCh38_assembly": {
+            "Chromosome": "12",
+            "CytogeneticLocation": "12p12.1",
+            "Start": 25205246,
+            "Stop": 25250929,
+            "TargetLength": 45684,
+            "Strand": "-"
+          }
+        },
+        {
+          "GRCh37_assembly": {
+            "Chromosome": "12",
+            "CytogeneticLocation": "12p12.1",
+            "Start": 25358179,
+            "Stop": 25403853,
+            "TargetLength": 45675,
+            "Strand": "-"
+          }
+        }
+      ]
+    }
+  ],
+  "ProteinChange": [
+    "G12C"
+  ],
+  "Classifications": {
+    "GermlineClassification": [
       {
-         "Symbol":"KLHL17",
-         "Full_Name":"kelch like family member 17",
-         "ID":"339451",
-         "OMIM":"619262",
-         "Location":{
-            "Chromosome":"1",
-            "Cytogenetic_Location":"1p36.33",
-            "Start":895966,
-            "Stop":901098,
-            "Strand":"+",
-            "Target_Length":5133
-         },
-         "Haploinsufficiency_Assertion":null,
-         "Triplosensitivity_Assertion":null
+        "ConditionList": [
+          {
+            "Type": "Disease",
+            "Names": [
+              {
+                "Prostate cancer, hereditary, 1": "Preferred"
+              }
+            ],
+            "Affected_Genes": [
+              {
+                "Preferred": {
+                  "Symbol": "Prostate cancer, hereditary, 1",
+                  "OMIM": ""
+                }
+              },
+              {
+                "Preferred": {
+                  "Symbol": "Prostate cancer, hereditary, 1",
+                  "OMIM": ""
+                }
+              }
+            ],
+            "Citations": [
+              {
+                "ID": "25394175",
+                "Type": "general",
+                "Source": "PubMed"
+              },
+              {
+                "URL": "https://www.nccn.org/professionals/physician_gls/pdf/prostate.pdf",
+                "CitationText": "NCCN Clinical Practice Guidelines in Oncology,\n                                    Prostate Cancer, Version 4.2022",
+                "Type": "practice guideline"
+              },
+              {
+                "ID": "31829902",
+                "Type": "general",
+                "Source": "PubMed"
+              },
+              {
+                "ID": "35924163",
+                "Type": "general",
+                "Source": "PubMed"
+              },
+              {
+                "ID": "9339641",
+                "Type": "general",
+                "Source": "pmc"
+              }
+            ]
+          }
+        ],
+        "DateLastEvaluated": "2019-02-02",
+        "DateCreated": "2017-09-29",
+        "MostRecentSubmission": "2019-03-31",
+        "ReviewStatus": "",
+        "Description": "",
+        "ClinicalAssertion": ""
       },
       {
-         "Symbol":"NOC2L",
-         "Full_Name":"NOC2 like nucleolar associated transcriptional repressor",
-         "ID":"26155",
-         "OMIM":"610770",
-         "Location":{
-            "Chromosome":"1",
-            "Cytogenetic_Location":"1p36.33",
-            "Start":879582,
-            "Stop":894678,
-            "Strand":"-",
-            "Target_Length":15097
-         },
-         "Haploinsufficiency_Assertion":null,
-         "Triplosensitivity_Assertion":null
+        "ConditionList": [
+          {
+            "Type": "Disease",
+            "Names": [
+              {
+                "Prostate cancer, hereditary, 1": "Preferred"
+              }
+            ],
+            "Affected_Genes": [
+              {
+                "Preferred": {
+                  "Symbol": "Prostate cancer, hereditary, 1",
+                  "OMIM": ""
+                }
+              },
+              {
+                "Preferred": {
+                  "Symbol": "Prostate cancer, hereditary, 1",
+                  "OMIM": ""
+                }
+              }
+            ],
+            "Citations": [
+              {
+                "ID": "25394175",
+                "Type": "general",
+                "Source": "PubMed"
+              },
+              {
+                "URL": "https://www.nccn.org/professionals/physician_gls/pdf/prostate.pdf",
+                "CitationText": "NCCN Clinical Practice Guidelines in Oncology,\n                                    Prostate Cancer, Version 4.2022",
+                "Type": "practice guideline"
+              },
+              {
+                "ID": "31829902",
+                "Type": "general",
+                "Source": "PubMed"
+              },
+              {
+                "ID": "35924163",
+                "Type": "general",
+                "Source": "PubMed"
+              },
+              {
+                "ID": "9339641",
+                "Type": "general",
+                "Source": "pmc"
+              }
+            ]
+          }
+        ],
+        "DateLastEvaluated": "2016-12-16",
+        "DateCreated": "2016-07-26",
+        "MostRecentSubmission": "2019-04-02",
+        "ReviewStatus": "",
+        "Description": "",
+        "ClinicalAssertion": ""
       },
       {
-         "Symbol":"PLEKHN1",
-         "Full_Name":"pleckstrin homology domain containing N1",
-         "ID":"84069",
-         "OMIM":null,
-         "Location":{
-            "Chromosome":"1",
-            "Cytogenetic_Location":"1p36.33",
-            "Start":901876,
-            "Stop":910487,
-            "Strand":"+",
-            "Target_Length":8612
-         },
-         "Haploinsufficiency_Assertion":null,
-         "Triplosensitivity_Assertion":null
-      },
-      {
-         "Symbol":"SAMD11",
-         "Full_Name":"sterile alpha motif domain containing 11",
-         "ID":"148398",
-         "OMIM":"616765",
-         "Location":{
-            "Chromosome":"1",
-            "Cytogenetic_Location":"1p36.33",
-            "Start":861120,
-            "Stop":879960,
-            "Strand":"+",
-            "Target_Length":18841
-         },
-         "Haploinsufficiency_Assertion":null,
-         "Triplosensitivity_Assertion":null
-      }
-   ],
-   "Protein_Changes":null,
-   "HGVSs":[
-      {
-         "Assembly":"GRCh38",
-         "Type":"genomic, top-level",
-         "Nucleotide_Expression":"NC_000001.11:g.(?_904070)_(978251_?)del",
-         "Protein_Expression":null,
-         "Molecular_Consequence":null
-      },
-      {
-         "Assembly":"NCBI36",
-         "Type":"genomic, top-level",
-         "Nucleotide_Expression":"NC_000001.9:g.(?_829313)_(903494_?)del",
-         "Protein_Expression":null,
-         "Molecular_Consequence":null
-      },
-      {
-         "Assembly":"GRCh37",
-         "Type":"genomic, top-level",
-         "Nucleotide_Expression":"NC_000001.10:g.(?_839450)_(913631_?)del",
-         "Protein_Expression":null,
-         "Molecular_Consequence":null
-      }
-   ],
-   "XRefs":[
-      {
-         "Database":"dbVar",
-         "Accession":"nssv583288",
-         "Type":null
-      },
-      {
-         "Database":"dbVar",
-         "Accession":"nsv497257",
-         "Type":null
-      }
-   ],
-   "RCVs":[
-      {
-         "Accession":"RCV000134195",
-         "Title":"GRCh38/hg38 1p36.33(chr1:904070-978251)x1 AND See cases",
-         "Description":null,
-         "Classified_Conditions":null,
-         "Classifications":[
+        "ConditionList": [
+          {
+            "Type": "Disease",
+            "Names": [
+              {
+                "Prostate cancer, hereditary, 1": "Preferred"
+              }
+            ],
+            "Affected_Genes": [
+              {
+                "Preferred": {
+                  "Symbol": "Prostate cancer, hereditary, 1",
+                  "OMIM": ""
+                }
+              },
+              {
+                "Preferred": {
+                  "Symbol": "Prostate cancer, hereditary, 1",
+                  "OMIM": ""
+                }
+              }
+            ],
+            "Citations": [
+              {
+                "ID": "25394175",
+                "Type": "general",
+                "Source": "PubMed"
+              },
+              {
+                "URL": "https://www.nccn.org/professionals/physician_gls/pdf/prostate.pdf",
+                "CitationText": "NCCN Clinical Practice Guidelines in Oncology,\n                                    Prostate Cancer, Version 4.2022",
+                "Type": "practice guideline"
+              },
+              {
+                "ID": "31829902",
+                "Type": "general",
+                "Source": "PubMed"
+              },
+              {
+                "ID": "35924163",
+                "Type": "general",
+                "Source": "PubMed"
+              },
+              {
+                "ID": "9339641",
+                "Type": "general",
+                "Source": "pmc"
+              }
+            ]
+          }
+        ],
+        "DateLastEvaluated": "2016-03-01",
+        "DateCreated": "2016-10-14",
+        "MostRecentSubmission": "2019-03-31",
+        "ReviewStatus": "",
+        "Description": "",
+        "ClinicalAssertion": {
+          "DateLastUpdated": "2019-03-31",
+          "ReviewStatus": "reviewed by expert panel",
+          "Classification": [
+            "OncogenicityClassification",
+            "Oncogenic"
+          ],
+          "AssertionMethodList": [
+            "ACMG Guidelines, 2015"
+          ],
+          "Citations": [
             {
-               "Name":"GermlineClassification",
-               "Review_Status":null,
-               "Descriptions":[
-                  {
-                     "Description":"Benign",
-                     "Clinical_Impact_Assertion_Type":null,
-                     "Clinical_Impact_Clinical_Significance":null,
-                     "Submission_Count":1,
-                     "Date_Last_Evaluated":1291075200000
-                  }
-               ]
+              "ID": "25741868",
+              "Type": "",
+              "Source": "PubMed"
             }
-         ]
+          ],
+          "AssertedTraitList": []
+        }
       }
-   ],
-   "Classifications":[
+    ],
+    "SomaticClinicalImpact": [
       {
-         "Name":"GermlineClassification",
-         "Date_Last_Evaluated":1291075200000,
-         "Date_Created":1436745600000,
-         "Date_Most_Recent_Submission":1436745600000,
-         "Number_Of_Submissions":1,
-         "Review_Status":null,
-         "Description":null,
-         "Conditions":[
-            {
-               "Type":"PhenotypeInstruction",
-               "Contributes_To_Aggregate_Classification":true,
-               "Traits":[
-                  {
-                     "Name":"See cases",
-                     "Label":"Preferred",
-                     "XRefs":null
-                  }
-               ],
-               "Symbolic_Trait":null,
-               "Attributes":null,
-               "Citations":null
-            }
-         ]
-      }
-   ],
-   "Clinical_Assertions":[
-      {
-         "Asserted_Classification":{
-            "Name":"GermlineClassification",
-            "Description":"Benign",
-            "Review_Status":"no assertion criteria provided",
-            "Date_Last_Evaluated":1291075200000,
-            "Clinical_Impact_Assertion_Type":null,
-            "Clinical_Impact_Clinical_Significance":null,
-            "Comment":null,
-            "Citations":null
-         },
-         "Assertion":"variation to disease",
-         "Attributes":null,
-         "ID":"313157",
-         "Date_Submission":1403308800000,
-         "Date_Last_Updated":1436745600000,
-         "Date_Created":1409356800000,
-         "Contributes_To_Aggregate_Classification":true,
-         "ClinVar_Accession":"SCV000173719",
-         "ClinVar_Submitter":"GeneDx",
-         "Record_Status":"current",
-         "Observed_Ins":[
-            {
-               "Sample":null,
-               "Is_Affected":true,
-               "Method":"clinical testing",
-               "Observed_Data":""
-            }
-         ],
-         "Conditions":null
-      }
-   ],
-   "Trait_Mappings":[
-      {
-         "TraitType":"Finding",
-         "MedGen_CUI":"CN218420",
-         "MedGen_Name":"Developmental delay AND/OR other significant developmental or morphological phenotypes"
+        "ConditionList": [
+          {
+            "Type": "Disease",
+            "Names": [
+              {
+                "Prostate cancer, hereditary, 1": "Preferred"
+              }
+            ],
+            "Affected_Genes": [
+              {
+                "Preferred": {
+                  "Symbol": "Prostate cancer, hereditary, 1",
+                  "OMIM": ""
+                }
+              },
+              {
+                "Preferred": {
+                  "Symbol": "Prostate cancer, hereditary, 1",
+                  "OMIM": ""
+                }
+              }
+            ],
+            "Citations": [
+              {
+                "ID": "25394175",
+                "Type": "general",
+                "Source": "PubMed"
+              },
+              {
+                "URL": "https://www.nccn.org/professionals/physician_gls/pdf/prostate.pdf",
+                "CitationText": "NCCN Clinical Practice Guidelines in Oncology,\n                                    Prostate Cancer, Version 4.2022",
+                "Type": "practice guideline"
+              },
+              {
+                "ID": "31829902",
+                "Type": "general",
+                "Source": "PubMed"
+              },
+              {
+                "ID": "35924163",
+                "Type": "general",
+                "Source": "PubMed"
+              },
+              {
+                "ID": "9339641",
+                "Type": "general",
+                "Source": "pmc"
+              }
+            ]
+          }
+        ],
+        "DateLastEvaluated": "2019-02-02",
+        "DateCreated": "2017-09-29",
+        "MostRecentSubmission": "2019-03-31",
+        "ReviewStatus": "",
+        "Description": "",
+        "ClinicalAssertion": ""
       },
       {
-         "TraitType":"PhenotypeInstruction",
-         "MedGen_CUI":"None",
-         "MedGen_Name":"See cases"
+        "ConditionList": [
+          {
+            "Type": "Disease",
+            "Names": [
+              {
+                "Prostate cancer, hereditary, 1": "Preferred"
+              }
+            ],
+            "Affected_Genes": [
+              {
+                "Preferred": {
+                  "Symbol": "Prostate cancer, hereditary, 1",
+                  "OMIM": ""
+                }
+              },
+              {
+                "Preferred": {
+                  "Symbol": "Prostate cancer, hereditary, 1",
+                  "OMIM": ""
+                }
+              }
+            ],
+            "Citations": [
+              {
+                "ID": "25394175",
+                "Type": "general",
+                "Source": "PubMed"
+              },
+              {
+                "URL": "https://www.nccn.org/professionals/physician_gls/pdf/prostate.pdf",
+                "CitationText": "NCCN Clinical Practice Guidelines in Oncology,\n                                    Prostate Cancer, Version 4.2022",
+                "Type": "practice guideline"
+              },
+              {
+                "ID": "31829902",
+                "Type": "general",
+                "Source": "PubMed"
+              },
+              {
+                "ID": "35924163",
+                "Type": "general",
+                "Source": "PubMed"
+              },
+              {
+                "ID": "9339641",
+                "Type": "general",
+                "Source": "pmc"
+              }
+            ]
+          }
+        ],
+        "DateLastEvaluated": "2016-12-16",
+        "DateCreated": "2016-07-26",
+        "MostRecentSubmission": "2019-04-02",
+        "ReviewStatus": "",
+        "Description": "",
+        "ClinicalAssertion": ""
+      },
+      {
+        "ConditionList": [
+          {
+            "Type": "Disease",
+            "Names": [
+              {
+                "Prostate cancer, hereditary, 1": "Preferred"
+              }
+            ],
+            "Affected_Genes": [
+              {
+                "Preferred": {
+                  "Symbol": "Prostate cancer, hereditary, 1",
+                  "OMIM": ""
+                }
+              },
+              {
+                "Preferred": {
+                  "Symbol": "Prostate cancer, hereditary, 1",
+                  "OMIM": ""
+                }
+              }
+            ],
+            "Citations": [
+              {
+                "ID": "25394175",
+                "Type": "general",
+                "Source": "PubMed"
+              },
+              {
+                "URL": "https://www.nccn.org/professionals/physician_gls/pdf/prostate.pdf",
+                "CitationText": "NCCN Clinical Practice Guidelines in Oncology,\n                                    Prostate Cancer, Version 4.2022",
+                "Type": "practice guideline"
+              },
+              {
+                "ID": "31829902",
+                "Type": "general",
+                "Source": "PubMed"
+              },
+              {
+                "ID": "35924163",
+                "Type": "general",
+                "Source": "PubMed"
+              },
+              {
+                "ID": "9339641",
+                "Type": "general",
+                "Source": "pmc"
+              }
+            ]
+          }
+        ],
+        "DateLastEvaluated": "2016-03-01",
+        "DateCreated": "2016-10-14",
+        "MostRecentSubmission": "2019-03-31",
+        "ReviewStatus": "",
+        "Description": "",
+        "ClinicalAssertion": {
+          "DateLastUpdated": "2019-03-31",
+          "ReviewStatus": "reviewed by expert panel",
+          "Classification": [
+            "OncogenicityClassification",
+            "Oncogenic"
+          ],
+          "AssertionMethodList": [
+            "ACMG Guidelines, 2015"
+          ],
+          "Citations": [
+            {
+              "ID": "25741868",
+              "Type": "",
+              "Source": "PubMed"
+            }
+          ],
+          "AssertedTraitList": []
+        }
       }
-   ]
+    ],
+    "OncogenicityClassification": [
+      {
+        "ConditionList": [
+          {
+            "Type": "Disease",
+            "Names": [
+              {
+                "Prostate cancer, hereditary, 1": "Preferred"
+              }
+            ],
+            "Affected_Genes": [
+              {
+                "Preferred": {
+                  "Symbol": "Prostate cancer, hereditary, 1",
+                  "OMIM": ""
+                }
+              },
+              {
+                "Preferred": {
+                  "Symbol": "Prostate cancer, hereditary, 1",
+                  "OMIM": ""
+                }
+              }
+            ],
+            "Citations": [
+              {
+                "ID": "25394175",
+                "Type": "general",
+                "Source": "PubMed"
+              },
+              {
+                "URL": "https://www.nccn.org/professionals/physician_gls/pdf/prostate.pdf",
+                "CitationText": "NCCN Clinical Practice Guidelines in Oncology,\n                                    Prostate Cancer, Version 4.2022",
+                "Type": "practice guideline"
+              },
+              {
+                "ID": "31829902",
+                "Type": "general",
+                "Source": "PubMed"
+              },
+              {
+                "ID": "35924163",
+                "Type": "general",
+                "Source": "PubMed"
+              },
+              {
+                "ID": "9339641",
+                "Type": "general",
+                "Source": "pmc"
+              }
+            ]
+          }
+        ],
+        "DateLastEvaluated": "2019-02-02",
+        "DateCreated": "2017-09-29",
+        "MostRecentSubmission": "2019-03-31",
+        "ReviewStatus": "",
+        "Description": "",
+        "ClinicalAssertion": ""
+      },
+      {
+        "ConditionList": [
+          {
+            "Type": "Disease",
+            "Names": [
+              {
+                "Prostate cancer, hereditary, 1": "Preferred"
+              }
+            ],
+            "Affected_Genes": [
+              {
+                "Preferred": {
+                  "Symbol": "Prostate cancer, hereditary, 1",
+                  "OMIM": ""
+                }
+              },
+              {
+                "Preferred": {
+                  "Symbol": "Prostate cancer, hereditary, 1",
+                  "OMIM": ""
+                }
+              }
+            ],
+            "Citations": [
+              {
+                "ID": "25394175",
+                "Type": "general",
+                "Source": "PubMed"
+              },
+              {
+                "URL": "https://www.nccn.org/professionals/physician_gls/pdf/prostate.pdf",
+                "CitationText": "NCCN Clinical Practice Guidelines in Oncology,\n                                    Prostate Cancer, Version 4.2022",
+                "Type": "practice guideline"
+              },
+              {
+                "ID": "31829902",
+                "Type": "general",
+                "Source": "PubMed"
+              },
+              {
+                "ID": "35924163",
+                "Type": "general",
+                "Source": "PubMed"
+              },
+              {
+                "ID": "9339641",
+                "Type": "general",
+                "Source": "pmc"
+              }
+            ]
+          }
+        ],
+        "DateLastEvaluated": "2016-12-16",
+        "DateCreated": "2016-07-26",
+        "MostRecentSubmission": "2019-04-02",
+        "ReviewStatus": "",
+        "Description": "",
+        "ClinicalAssertion": ""
+      },
+      {
+        "ConditionList": [
+          {
+            "Type": "Disease",
+            "Names": [
+              {
+                "Prostate cancer, hereditary, 1": "Preferred"
+              }
+            ],
+            "Affected_Genes": [
+              {
+                "Preferred": {
+                  "Symbol": "Prostate cancer, hereditary, 1",
+                  "OMIM": ""
+                }
+              },
+              {
+                "Preferred": {
+                  "Symbol": "Prostate cancer, hereditary, 1",
+                  "OMIM": ""
+                }
+              }
+            ],
+            "Citations": [
+              {
+                "ID": "25394175",
+                "Type": "general",
+                "Source": "PubMed"
+              },
+              {
+                "URL": "https://www.nccn.org/professionals/physician_gls/pdf/prostate.pdf",
+                "CitationText": "NCCN Clinical Practice Guidelines in Oncology,\n                                    Prostate Cancer, Version 4.2022",
+                "Type": "practice guideline"
+              },
+              {
+                "ID": "31829902",
+                "Type": "general",
+                "Source": "PubMed"
+              },
+              {
+                "ID": "35924163",
+                "Type": "general",
+                "Source": "PubMed"
+              },
+              {
+                "ID": "9339641",
+                "Type": "general",
+                "Source": "pmc"
+              }
+            ]
+          }
+        ],
+        "DateLastEvaluated": "2016-03-01",
+        "DateCreated": "2016-10-14",
+        "MostRecentSubmission": "2019-03-31",
+        "ReviewStatus": "",
+        "Description": "",
+        "ClinicalAssertion": {
+          "DateLastUpdated": "2019-03-31",
+          "ReviewStatus": "reviewed by expert panel",
+          "Classification": [
+            "OncogenicityClassification",
+            "Oncogenic"
+          ],
+          "AssertionMethodList": [
+            "ACMG Guidelines, 2015"
+          ],
+          "Citations": [
+            {
+              "ID": "25741868",
+              "Type": "",
+              "Source": "PubMed"
+            }
+          ],
+          "AssertedTraitList": []
+        }
+      }
+    ]
+  }
 }
 ```
 
