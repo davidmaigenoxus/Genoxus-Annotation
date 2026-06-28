@@ -707,5 +707,5 @@ The following datasets are planned in future releases:
 [GnomAD](https://gnomad.broadinstitute.org/) data is planned to be included in v3 release.
 
 ## Change Log
-Fixed certain empty citations. June 27, 2026 
+Fixed certain empty citations, updates with Clinvar June 2026 release. June 27, 2026. 
 
