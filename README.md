@@ -3,8 +3,8 @@
 Genoxus Labs Team: genoxuslabs@gmail.com
 
 
-Version 1.0   
-April 18, 2026
+Version 1.0.1   
+June 27, 2026
 
 
 
@@ -706,4 +706,6 @@ The following datasets are planned in future releases:
 
 [GnomAD](https://gnomad.broadinstitute.org/) data is planned to be included in v3 release.
 
+# Change Log
+Fixed certain empty citations. June 27, 2026 
 
